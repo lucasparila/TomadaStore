@@ -18,7 +18,7 @@ namespace TomadaStore.Models.Models
         public decimal Price { get; private set; } 
         public Category category { get; private set; }
 
-        [BsonConstructor]
+        public Product(){}
         public Product(string id, string name, string description, decimal price, Category category)
         {
             Id = ObjectId.Parse(id);

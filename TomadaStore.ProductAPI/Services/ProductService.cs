@@ -1,4 +1,7 @@
-﻿using TomadaStore.Models.DTOs.Products;
+﻿
+
+
+using TomadaStore.Models.DTOs.Products;
 using TomadaStore.ProductAPI.Controllers.Interfaces;
 using TomadaStore.ProductAPI.Repository;
 

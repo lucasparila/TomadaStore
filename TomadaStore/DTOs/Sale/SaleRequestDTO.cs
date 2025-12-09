@@ -8,7 +8,8 @@ namespace TomadaStore.Models.DTOs.Sale
 {
     public class SaleRequestDTO
     {
-       
+
+        public int ClienteId { get; set; }
         public List<string> ProductIds { get; set; }
 
         public SaleRequestDTO()

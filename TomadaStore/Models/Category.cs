@@ -16,6 +16,8 @@ namespace TomadaStore.Models.Models
         public ObjectId Id { get; private set; }
         public string Name { get; private set; }
         public string Description { get; private set; }
+
+        public Category() { }
         public Category(string name, string description)
         {
             this.Id = ObjectId.GenerateNewId();
@@ -23,7 +25,7 @@ namespace TomadaStore.Models.Models
             Description = description;
         }
 
-        [BsonConstructor]
+        
         public Category(string id, string name, string description)
         {
             this.Id = ObjectId.Parse(id);
